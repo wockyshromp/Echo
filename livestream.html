@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ECHO - Live Music Streams and Events">
+    <meta name="keywords" content="live music, music streaming, live events, music community">
+    <meta name="author" content="Ella Daube">
+    <title>Livestreams - ECHO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ECHO</a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="livestream.html">Livestream</a></li>
+                <li><a href="playlists.html">Playlists</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <div>
+                <a href="login.html" class="cta-button">Login</a>
+                <a href="signup.html" class="cta-button">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero livestream-hero">
+            <h1>Live Music Streams</h1>
+            <p>Experience music together, in real-time</p>
+        </section>
+
+        <section class="livestream-content">
+            <div class="live-now">
+                <h2>Live Now</h2>
+                <div class="stream-grid">
+                    <div class="stream-card live">
+                        <div class="stream-preview">
+                            <img src="band.jpeg" alt="Live Stream Preview">
+                            <span class="live-badge">LIVE</span>
+                            <span class="viewer-count">1.2K watching</span>
+                        </div>
+                        <div class="stream-info">
+                            <h3>Jazz Night with Sarah</h3>
+                            <p class="streamer">Sarah Johnson</p>
+                            <p class="stream-tags">
+                                <span>#jazz</span>
+                                <span>#live</span>
+                                <span>#music</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- More live stream cards would be added dynamically -->
+                </div>
+            </div>
+
+            <div class="upcoming-streams">
+                <h2>Upcoming Streams</h2>
+                <div class="stream-grid">
+                    <div class="stream-card upcoming">
+                        <div class="stream-preview">
+                            <img src="band.jpeg" alt="Upcoming Stream Preview">
+                            <span class="time-badge">In 2 hours</span>
+                        </div>
+                        <div class="stream-info">
+                            <h3>Electronic Music Mix</h3>
+                            <p class="streamer">DJ Mike</p>
+                            <p class="stream-time">Today at 8:00 PM EST</p>
+                            <button class="reminder-btn">Set Reminder</button>
+                        </div>
+                    </div>
+                    <!-- More upcoming stream cards would be added dynamically -->
+                </div>
+            </div>
+
+            <div class="schedule-stream">
+                <h2>Schedule Your Stream</h2>
+                <div class="form-container">
+                    <form action="submit-stream.html" method="POST">
+                        <div class="form-group">
+                            <label for="stream-title">Stream Title:</label>
+                            <input type="text" id="stream-title" name="stream-title" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="stream-description">Description:</label>
+                            <textarea id="stream-description" name="stream-description" rows="4" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="stream-date">Date:</label>
+                            <input type="date" id="stream-date" name="stream-date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="stream-time">Time:</label>
+                            <input type="time" id="stream-time" name="stream-time" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="stream-duration">Duration (hours):</label>
+                            <input type="number" id="stream-duration" name="stream-duration" min="0.5" max="8" step="0.5" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="stream-genre">Genre:</label>
+                            <select id="stream-genre" name="stream-genre" required>
+                                <option value="">Select a genre</option>
+                                <option value="rock">Rock</option>
+                                <option value="jazz">Jazz</option>
+                                <option value="electronic">Electronic</option>
+                                <option value="classical">Classical</option>
+                                <option value="pop">Pop</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="stream-thumbnail">Stream Thumbnail:</label>
+                            <input type="file" id="stream-thumbnail" name="stream-thumbnail" accept="image/*">
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="chat-enabled" checked>
+                                Enable live chat during stream
+                            </label>
+                        </div>
+
+                        <button type="submit" class="cta-button">Schedule Stream</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 All Rights Reserved, ECHO</p>
+        <nav>
+            <a href="about.html">About Echo</a> |
+            <a href="https://spotify.com" target="_blank">Spotify</a> |
+            <a href="mailto:contact@echo-music.com">Contact Us</a>
+        </nav>
+    </footer>
+</body>
+</html> 

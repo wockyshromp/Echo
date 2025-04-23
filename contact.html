@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact ECHO - Get in touch with our team for support and inquiries">
+    <meta name="keywords" content="contact, support, help, music community">
+    <meta name="author" content="Ella Daube">
+    <title>Contact Us - ECHO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ECHO</a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="livestream.html">Livestream</a></li>
+                <li><a href="playlists.html">Playlists</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <div>
+                <a href="login.html" class="cta-button">Login</a>
+                <a href="signup.html" class="cta-button">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="form-container">
+                <h1>Contact Us</h1>
+                <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                
+                <form action="submit.html" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="business">Business Partnership</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            Subscribe to our newsletter
+                        </label>
+                    </div>
+
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Other Ways to Reach Us</h2>
+                <p>Email: <a href="mailto:contact@echo-music.com">contact@echo-music.com</a></p>
+                <p>Follow us on social media:</p>
+                <ul class="social-links">
+                    <li><a href="https://twitter.com/echo" target="_blank">Twitter</a></li>
+                    <li><a href="https://instagram.com/echo" target="_blank">Instagram</a></li>
+                    <li><a href="https://facebook.com/echo" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 All Rights Reserved, ECHO</p>
+        <nav>
+            <a href="about.html">About Echo</a> |
+            <a href="https://spotify.com" target="_blank">Spotify</a> |
+            <a href="mailto:contact@echo-music.com">Contact Us</a>
+        </nav>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ECHO Feedback - Share your thoughts and help us improve">
+    <meta name="keywords" content="feedback, suggestions, bug report, feature request">
+    <meta name="author" content="Ella Daube">
+    <title>Feedback - ECHO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ECHO</a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="livestream.html">Livestream</a></li>
+                <li><a href="playlists.html">Playlists</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <div>
+                <a href="login.html" class="cta-button">Login</a>
+                <a href="signup.html" class="cta-button">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero feedback-hero">
+            <h1>Share Your Feedback</h1>
+            <p>Help us improve ECHO</p>
+        </section>
+
+        <section class="feedback-content">
+            <div class="feedback-intro">
+                <h2>Your Voice Matters</h2>
+                <p>We value your input and use it to make ECHO better for everyone. Whether you have a suggestion, found a bug, or want to request a new feature, we want to hear from you.</p>
+            </div>
+
+            <div class="feedback-form-container">
+                <form id="feedback-form" class="feedback-form">
+                    <div class="form-group">
+                        <label for="feedback-type">Type of Feedback</label>
+                        <select id="feedback-type" name="feedback-type" required>
+                            <option value="">Select feedback type</option>
+                            <option value="bug">Bug Report</option>
+                            <option value="feature">Feature Request</option>
+                            <option value="suggestion">General Suggestion</option>
+                            <option value="usability">Usability Issue</option>
+                            <option value="performance">Performance Problem</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback-category">Category</label>
+                        <select id="feedback-category" name="feedback-category" required>
+                            <option value="">Select category</option>
+                            <option value="playlists">Playlists</option>
+                            <option value="livestream">Livestreaming</option>
+                            <option value="community">Community Features</option>
+                            <option value="map">Global Music Map</option>
+                            <option value="account">Account Management</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback-title">Title</label>
+                        <input type="text" id="feedback-title" name="feedback-title" required placeholder="Brief description of your feedback">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback-description">Description</label>
+                        <textarea id="feedback-description" name="feedback-description" rows="5" required placeholder="Please provide detailed information about your feedback"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback-severity">Severity (if applicable)</label>
+                        <select id="feedback-severity" name="feedback-severity">
+                            <option value="">Select severity</option>
+                            <option value="low">Low - Minor inconvenience</option>
+                            <option value="medium">Medium - Affects functionality</option>
+                            <option value="high">High - Critical issue</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback-attachments">Attachments</label>
+                        <input type="file" id="feedback-attachments" name="feedback-attachments" multiple accept="image/*,.pdf,.doc,.docx">
+                        <p class="form-help">You can attach screenshots or documents to help explain your feedback (optional)</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="follow-up" id="follow-up">
+                            I'd like to receive updates about this feedback
+                        </label>
+                    </div>
+
+                    <button type="submit" class="cta-button">Submit Feedback</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 All Rights Reserved, ECHO</p>
+        <nav>
+            <a href="about.html">About Echo</a> |
+            <a href="https://spotify.com" target="_blank">Spotify</a> |
+            <a href="mailto:contact@echo-music.com">Contact Us</a>
+        </nav>
+    </footer>
+</body>
+</html> 

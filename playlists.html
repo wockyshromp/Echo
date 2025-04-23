@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ECHO - Share and discover music playlists across platforms">
+    <meta name="keywords" content="music playlists, playlist sharing, cross-platform playlists, music community">
+    <meta name="author" content="Ella Daube">
+    <title>Share Playlists - ECHO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ECHO</a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="livestream.html">Livestream</a></li>
+                <li><a href="playlists.html">Playlists</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <div>
+                <a href="login.html" class="cta-button">Login</a>
+                <a href="signup.html" class="cta-button">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero playlist-hero">
+            <h1>Share Your Playlists</h1>
+            <p>Connect through music across all platforms</p>
+        </section>
+
+        <section class="playlist-content">
+            <div class="share-playlist">
+                <h2>Upload Your Playlist</h2>
+                <div class="form-container">
+                    <form action="submit-playlist.html" method="POST">
+                        <div class="form-group">
+                            <label for="playlist-title">Playlist Title:</label>
+                            <input type="text" id="playlist-title" name="playlist-title" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="playlist-description">Description:</label>
+                            <textarea id="playlist-description" name="playlist-description" rows="3" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="playlist-source">Source Platform:</label>
+                            <select id="playlist-source" name="playlist-source" required>
+                                <option value="">Select platform</option>
+                                <option value="spotify">Spotify</option>
+                                <option value="apple">Apple Music</option>
+                                <option value="youtube">YouTube Music</option>
+                                <option value="tidal">Tidal</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="playlist-link">Playlist Link:</label>
+                            <input type="url" id="playlist-link" name="playlist-link" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="playlist-genre">Primary Genre:</label>
+                            <select id="playlist-genre" name="playlist-genre" required>
+                                <option value="">Select genre</option>
+                                <option value="pop">Pop</option>
+                                <option value="rock">Rock</option>
+                                <option value="hiphop">Hip Hop</option>
+                                <option value="electronic">Electronic</option>
+                                <option value="jazz">Jazz</option>
+                                <option value="classical">Classical</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="playlist-tags">Tags (comma-separated):</label>
+                            <input type="text" id="playlist-tags" name="playlist-tags" placeholder="workout, chill, party">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="playlist-cover">Playlist Cover Image:</label>
+                            <input type="file" id="playlist-cover" name="playlist-cover" accept="image/*">
+                        </div>
+
+                        <button type="submit" class="cta-button">Share Playlist</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="trending-playlists">
+                <h2>Trending Playlists</h2>
+                <div class="playlist-grid">
+                    <div class="playlist-card">
+                        <div class="playlist-cover">
+                            <img src="summervibes.jpg" alt="Playlist Cover">
+                            <div class="playlist-stats">
+                                <span class="rating">★ 4.8</span>
+                                <span class="saves">1.2K saves</span>
+                            </div>
+                        </div>
+                        <div class="playlist-info">
+                            <h3>Summer Vibes 2025</h3>
+                            <p class="playlist-creator">by Music Lover</p>
+                            <div class="platform-badges">
+                                <span class="platform spotify">Spotify</span>
+                                <span class="platform apple">Apple Music</span>
+                            </div>
+                            <div class="playlist-tags">
+                                <span>#summer</span>
+                                <span>#pop</span>
+                                <span>#dance</span>
+                            </div>
+                            <div class="playlist-actions">
+                                <button class="action-btn save">Save</button>
+                                <button class="action-btn comment">Comment</button>
+                                <div class="rating-stars">
+                                    ★★★★★
+                                </div>
+                            </div>
+                        </div>
+                        <div class="playlist-comments">
+                            <h4>Recent Comments</h4>
+                            <div class="comment">
+                                <p class="comment-text">Perfect summer playlist! Love the mix of new and classic hits.</p>
+                                <p class="comment-author">@musicfan123</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More playlist cards would be added dynamically -->
+                </div>
+            </div>
+
+            <div class="playlist-categories">
+                <h2>Browse by Category</h2>
+                <div class="category-grid">
+                    <a href="#" class="category-card">
+                        <img src="workout.jpg" alt="Workout Playlists">
+                        <h3>Workout</h3>
+                        <p>Get energized</p>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="chill.jpeg" alt="Chill Playlists">
+                        <h3>Chill</h3>
+                        <p>Relax and unwind</p>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="party.jpeg" alt="Party Playlists">
+                        <h3>Party</h3>
+                        <p>Time to celebrate</p>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="focus.jpeg" alt="Focus Playlists">
+                        <h3>Focus</h3>
+                        <p>Stay productive</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 All Rights Reserved, ECHO</p>
+        <nav>
+            <a href="about.html">About Echo</a> |
+            <a href="https://spotify.com" target="_blank">Spotify</a> |
+            <a href="mailto:contact@echo-music.com">Contact Us</a>
+        </nav>
+    </footer>
+</body>
+</html> 
